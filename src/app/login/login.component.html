@@ -1,12 +1,12 @@
-<div>
+<div class="connectForm">
   <h2>Login</h2>
-  <form (ngSubmit)="onSubmit()">
-    <div>
+  <form (ngSubmit)="onSubmit()" class="loginForm">
+    <div class="inputForm">
       <label for="email">Email:</label>
       <input type="text" id="email" [(ngModel)]="email" name="email" required />
     </div>
 
-    <div>
+    <div class="inputForm">
       <label for="password">Password:</label>
       <input
         type="password"
@@ -16,7 +16,6 @@
         required
       />
     </div>
-
     <button type="submit">Login</button>
   </form>
 </div>
