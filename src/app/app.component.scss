@@ -5,10 +5,16 @@ body {
 
 .navBar {
   display: flex;
-  align-items: center; // centre verticalement
+  align-items: center;
   padding: 0.5rem 2rem;
   background-color: #c9c4c4;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+}
+
+.logo {
+  height: 75px;
+  margin-right: 2rem;
 }
 
 .linkNavBar {
