@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AuthService } from '../service/auth.service';
+import { AuthService } from '../../service/auth.service';
 
 @Component({
   selector: 'app-signup',
+  standalone: true,
   imports: [FormsModule],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.scss',
