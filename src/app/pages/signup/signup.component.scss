@@ -35,6 +35,7 @@ h2 {
   width: 100%;
   max-width: 400px;
   padding: 20px;
+  margin-top: 15px;
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -74,8 +75,8 @@ h2 {
 
       &:focus {
         outline: none;
-        border-color: #0078d7;
-        box-shadow: 0 0 5px rgba(0, 120, 215, 0.3);
+        border-color: #e84118;
+        box-shadow: 0 0 5px rgba(215, 0, 0, 0.3);
       }
     }
 
@@ -85,18 +86,14 @@ h2 {
       font-size: 16px;
       font-weight: bold;
       color: #fff;
-      background-color: #0078d7;
+      background-color: #ff4757;
       border: none;
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: #005bb5;
-      }
-
-      &:active {
-        background-color: #003f87;
+        background-color: #e84118;
       }
     }
   }

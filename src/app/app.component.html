@@ -1,10 +1,18 @@
 <nav class="navBar">
   <ul class="linkNavBar">
-    <li><a routerLink="/">Home Page</a></li>
-    <li><a routerLink="/signup">Signup</a></li>
-    <li><a routerLink="/login">Login</a></li>
+    <li class="cta"><a class="btn" routerLink="/">Home Page</a></li>
+    <li class="cta">
+      <a class="btn" routerLink="/signup">Signup</a>
+    </li>
+    <li class="cta"><a class="btn" routerLink="/login">Login</a></li>
     <!-- <li><a routerLink="/signal">Signal</a></li> -->
   </ul>
 </nav>
-<main></main>
-<router-outlet />
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 MarioKart. Tous droits réservés.</p>
+</footer>
