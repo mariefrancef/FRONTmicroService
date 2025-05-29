@@ -11,6 +11,7 @@ import { AuthService } from '../../service/auth.service';
 })
 export class SignupComponent {
   name: string = '';
+  firstname: string = '';
   email: string = '';
   password: string = '';
 
@@ -18,28 +19,16 @@ export class SignupComponent {
 
   onSubmit() {
     // subscribe sert à lancer la fonction signupToApi
-    this.auth.signupToApi(this.name, this.email, this.password).subscribe({
-      next: () => {},
-      error: (err) => console.error('Observable emitted an error: ' + err),
-      complete: () => alert('User registered'),
-    });
+    this.auth
+      .signupToApi(this.name, this.firstname, this.email, this.password)
+      .subscribe({
+        next: () => {},
+        error: (err) => console.error('Observable emitted an error: ' + err),
+        complete: () => alert('User registered'),
+      });
 
     // console.log('Name:', this.name);
     // console.log('Email:', this.email);
     // console.log('Password:', this.password);
   }
 }
-
-/*
-Comprendre l'observable : 
-const observable = new Observable(observer => {
-  observer.next(1);
-  observer.next(2);
-  observer.complete();
-});
-
-observable.subscribe({
-  next: value => console.log(value),
-  complete: () => console.log('Terminé')
-});
-*/
